@@ -4,7 +4,8 @@ train:
   weights:
   class: overlap.datasets.Cifar10PatchGaussian
   params:
-    data_path: ${cifar10_data_path}
+#    data_path: ${cifar10_data_path}
+    data_path: "/mnt/hdd0"
     split: 'train'
     im_size: 32
     transform_file:
