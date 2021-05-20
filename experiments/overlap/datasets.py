@@ -55,7 +55,7 @@ class Cifar10Base(torch.utils.data.Dataset):
         else:
             self.transform_list = None
 
-        self.dataset = tv.datasets.CIFAR10(data_path, self.train, download=False)
+        self.dataset = tv.datasets.CIFAR10(data_path, self.train, download=True)
 
 
     def build_transform_list(self, num_transforms):
@@ -548,7 +548,7 @@ class Cifar10AugmixJSD(torch.utils.data.Dataset):
                 prob_coeff=augmix_prob_coeff
                 )
 
-        self.dataset = tv.datasets.CIFAR10(data_path, self.train, transform=None, download=False)
+        self.dataset = tv.datasets.CIFAR10(data_path, self.train, transform=None, download=True)
 
     def __getitem__(self, index):
         im, label = self.dataset[index]
