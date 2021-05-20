@@ -4,7 +4,7 @@ corrupt:
   class: overlap.datasets.Cifar10Corruption
   mCE_baseline_file: 'mCE_baseline.p'
   params:
-    data_path: ${cifar10_data_path}
+    data_path: "/mnt/hdd0"
     split: 'test'
     im_size: 32
     train_aug:

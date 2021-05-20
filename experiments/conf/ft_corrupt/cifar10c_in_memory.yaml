@@ -5,7 +5,7 @@ ft_corrupt:
   num_indices: 100
   class: overlap.datasets.Cifar10Corruption
   params:
-    data_path: ${cifar10_data_path}
+    data_path: "/mnt/hdd0"
     split: 'train'
     im_size: 32
     train_aug: False
