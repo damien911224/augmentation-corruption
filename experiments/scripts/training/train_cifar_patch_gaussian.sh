@@ -11,4 +11,4 @@ export PYTHONPATH=$PYTHONPATH:$CWD/../..
 set -u
 export LAUNCHER=submitit_local
 
-python ../../train_cifar10.py train=cifar10_pg hydra/launcher=$LAUNCHER rng_seed=777 -m
+python3 ../../train_cifar10.py train=cifar10_pg hydra/launcher=$LAUNCHER rng_seed=777 -m
