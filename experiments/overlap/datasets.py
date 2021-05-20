@@ -274,7 +274,8 @@ class Cifar10PatchGaussian(Cifar10Base):
         if train_aug or (split=='train' and train_aug is None):
             train = standard_augmentations.Cifar10CropAndFlip(severity=None, im_size=im_size)
             aug = compositions.ComposeSerially([aug, train])
-
+        print("!!!!")
+        print(data_path)
         super(Cifar10PatchGaussian, self).__init__(data_path, split, im_size, False, num_transforms,
                 aug, transform_file=transform_file)
 
