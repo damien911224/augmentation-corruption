@@ -2,7 +2,8 @@ ft_augmentation:
   batch_size: 200
   class: overlap.datasets.Cifar10PatchGaussian
   params:
-    data_path: ${cifar10_data_path}
+#    data_path: ${cifar10_data_path}
+    data_path: "/mnt/hdd0"
     split: ${train.params.split}
     im_size: ${train.params.im_size}
     train_aug: False
