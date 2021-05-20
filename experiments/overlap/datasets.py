@@ -54,7 +54,7 @@ class Cifar10Base(torch.utils.data.Dataset):
             self.transform_list = self.build_transform_list(num_transforms)
         else:
             self.transform_list = None
-
+        print(data_path)
         self.dataset = tv.datasets.CIFAR10(data_path, self.train, download=True)
 
 
